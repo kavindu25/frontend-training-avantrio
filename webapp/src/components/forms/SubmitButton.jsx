@@ -7,7 +7,7 @@ export default function SubmitButton({ children = "Submit", size, variant }) {
   const getButtonClassName = () => {
     let btnClass = "w-100 btn";
     if (variant === "outlined") {
-      btnClass += " btn-outline-primary";
+      btnClass += " btn-secondary";
     } else {
       btnClass += " btn-primary";
     }
