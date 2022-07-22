@@ -1,0 +1,50 @@
+$enable-gradients: true;
+$enable-shadows: true;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+// $body-bg: #D1D1D1;
+$font-family-base: 'Poppins', sans-serif;
+
+// colours 
+$primary: #6A82FF;  
+$secondary: #30387D;
+$danger: #FF7777;
+
+$gradient-bg: linear-gradient(180deg, #6A82FF 0%, #E16AFF 100%);
+
+// fonts
+$h1-font-size: 4rem;
+$h2-font-size: 1.5rem;
+$h3-font-size: 1.25rem;
+
+//btn styles
+// $btn-font-family: "Gilroy";
+$btn-font-weight: 700;
+$btn-font-size: 1.125rem;
+$btn-border-radius: 12px;
+
+// forms 
+// form text
+$form-text-font-size: 1rem;    
+$form-text-font-style: normal;                          
+$form-text-font-weight: 500;    
+$form-text-color: #30387D;
+
+// form label
+$form-label-font-size: 0.875rem;
+$form-label-font-weight: 600;
+$form-label-color: rgba(48, 56, 125, 0.52);
+
+// form input
+$input-bg: rgba(226, 226, 230, 0.18);
+$input-border-color: rgba(48, 56, 125, 0.32);
+$input-focus-color: #30387D;
+$input-focus-border-color: #30387D;
+$input-placeholder-color: rgba(48, 56, 125, 0.52);
+
+
+// box shadow
+$box-shadow: 0px 17px 46px rgba(0, 0, 0, 0.25);
+$box-shadow-sm: 0px 12.388px 95.8008px rgba(48, 56, 125, 0.12);
+$box-shadow-lg: 0px 17.7395px 137.186px rgba(48, 56, 125, 0.12);
