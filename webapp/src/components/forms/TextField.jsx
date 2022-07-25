@@ -6,6 +6,7 @@ export default function TextField({
   label,
   type = "text",
   placeholder,
+  inputClass,
   ...rest
 }) {
   const [field, meta] = useField({ name, label, type, placeholder, ...rest });
@@ -17,7 +18,7 @@ export default function TextField({
         </label>
       )}
       <input
-        className="form-control"
+        className={`form-control ${inputClass}`}
         placeholder={placeholder || ""}
         type={type}
         {...field}
