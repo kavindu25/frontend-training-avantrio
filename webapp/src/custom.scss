@@ -118,24 +118,24 @@ body {
     color: #FFFFFF;
 }
 
-.btn-outlined {
-    background: #FFFFFF;
-    border: 1px solid #6A82FF;
-    border-radius: $btn-border-radius;
-    color: #6A82FF;
-}
+// .btn-outlined {
+//     background: #FFFFFF;
+//     border: 1px solid #6A82FF;
+//     border-radius: $btn-border-radius;
+//     color: #6A82FF;
+// }
 
-.btn-outlined:hover {
-    background: #FFFFFF;
-    border: 1px solid #5C74F2;
-    color: #6A82FF;
-}
+// .btn-outlined:hover {
+//     background: #FFFFFF;
+//     border: 1px solid #5C74F2;
+//     color: #6A82FF;
+// }
 
-.btn-outlined:active {
-    background: #FFFFFF;
-    border: 1px solid #3E51B4;
-    color: #3E51B4;
-}
+// .btn-outlined:active {
+//     background: #FFFFFF;
+//     border: 1px solid #3E51B4;
+//     color: #3E51B4;
+// }
 
 input:invalid {
     color: $danger;
