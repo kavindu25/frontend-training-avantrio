@@ -14,9 +14,9 @@ export default function DesignSystem() {
           <h1 className="display-6 ms-5">Typography </h1>
         </div>
         <div className="py-2 ms-5">
-          <h1 className="py-2">h1 size: 64px</h1>
-          <h2 className="py-2">h2 size: 24px </h2>
-          <h3 className="py-2">h3 size: 20px</h3>
+          <h1 className="py-2 fw-bold">h1 size: 64px</h1>
+          <h2 className="py-2 fw-bold">h2 size: 24px </h2>
+          <h3 className="py-2 fw-bold">h3 size: 20px</h3>
           <p className="para1">p1 size: 16px</p>
           <p className="para2">p2 size: 14px</p>
           <p className="para3">p3 size: 12px</p>
