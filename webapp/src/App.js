@@ -8,6 +8,7 @@ import ModalContainer from "./components/modals/ModalContainer";
 import TablesExamplePage from "./pages/examples/TablesExamplePage";
 import FormsExamplePage from "./pages/examples/FormsExamplePage";
 import ModalsExamplePage from "./pages/examples/ModalsExample";
+import DesignSystem from "./pages/DesignSystem";
 
 import "./custom.scss";
 
@@ -23,6 +24,7 @@ function App() {
           <Route path="forms" element={<FormsExamplePage />} />
           <Route path="modals" element={<ModalsExamplePage />} />
         </Route>
+        <Route path="/testdesign" element={<DesignSystem/>} />
         <Route path="/signout" element={<SignoutPage />} />
         <Route path="/signin" element={<SignInPage />} />
       </Routes>

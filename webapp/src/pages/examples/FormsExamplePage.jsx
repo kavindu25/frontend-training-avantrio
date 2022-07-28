@@ -65,6 +65,11 @@ export default function FormsExamplePage() {
           <div className="col-3">
             <SubmitButton />
           </div>
+          <div className="col-3">
+            <SubmitButton 
+              variant = "outlined"
+            />
+          </div>
         </div>
       </Form>
     </div>
