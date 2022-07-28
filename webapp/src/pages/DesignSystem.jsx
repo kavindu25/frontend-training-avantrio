@@ -1,16 +1,12 @@
 import React from "react";
 import { Form, SubmitButton, TextField } from "../components/forms";
 import CreateIcon from "../components/CreateIcon";
-import { useModal } from "../hooks/modalsHooks";
-import { useGetMyProfileQuery } from "../services/userService";
 import {
   ICON_TYPES_LIST,
   INNER_ICON_TYPES_LIST,
 } from "../constants/iconTypeConsts";
 
 export default function DesignSystem() {
-  const { showModal } = useModal();
-  useGetMyProfileQuery();
   return (
     <div className="container">
       <div>
@@ -18,9 +14,12 @@ export default function DesignSystem() {
           <h1 className="display-6 ms-5">Typography </h1>
         </div>
         <div className="py-2 ms-5">
-          <h1 className="py-2">h1 size</h1>
-          <h2 className="py-2">h2 size</h2>
-          <h3 className="">h3 size</h3>
+          <h1 className="py-2">h1 size: 64px</h1>
+          <h2 className="py-2">h2 size: 24px </h2>
+          <h3 className="py-2">h3 size: 20px</h3>
+          <p className="para1">p1 size: 16px</p>
+          <p className="para2">p2 size: 14px</p>
+          <p className="para3">p3 size: 12px</p>
         </div>
       </div>
       <div>
@@ -45,14 +44,6 @@ export default function DesignSystem() {
                 />
               </div>
             </div>
-            {/* <div className="row pt-2">
-              <div className="col-3">
-                <TextField name="first_name" label="First Name" />
-              </div>
-              <div className="col-3">
-                <TextField name="last_name" label="Last Name" />
-              </div>
-            </div> */}
           </Form>
         </div>
       </div>
@@ -248,15 +239,15 @@ export default function DesignSystem() {
               />
             </div>
           </div>
-          {/* place-items: center */}
           <div className="row py-4 ms-5">
             <div className="col-1">
               <CreateIcon
+                bgColour={"#ffffff"}
                 customStyles={{
                   width: "67px",
                   height: "67px",
                   borderRadius: "50%",
-                  border: "2px solid #dadada",
+                  border: "2px solid #ffffff",
                 }}
                 innerIconBg={"/images/bell.png"}
                 innerIconCustomStyles={{
@@ -289,20 +280,22 @@ export default function DesignSystem() {
             </div>
             <div className="col-1">
               <CreateIcon
+                bgColour={"#ffffff"}
                 customStyles={{
                   width: "57px",
                   height: "57px",
-                  borderRadius: "17.74px",
+                  borderRadius: "50%",
+                  border: "2px solid #ffffff",
                 }}
-                // bgColour={"#30387D"}
                 innerIconBg={"/images/man-with-glasses.png"}
                 innerIconCustomStyles={{
-                  width: "57.36px",
-                  height: "57.36px",
-                  borderRadius: "17.74px",
+                  width: "52px",
+                  height: "52px",
+                  borderRadius: "50%",
                   backgroundRepeat: "no-repeat",
                   backgroundPosition: "center",
                   backgroundSize: "cover",
+                  backgroundColor: "white",
                 }}
               />
             </div>
