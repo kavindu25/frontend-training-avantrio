@@ -215,3 +215,15 @@ input:invalid {
   font-size: 12px;
   line-height: 18px;
 }
+
+// horizontal scrollable menu
+.scroll-menu-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  
+  // to hide the scrollbar
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

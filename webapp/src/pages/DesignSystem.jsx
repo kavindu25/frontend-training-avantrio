@@ -5,6 +5,8 @@ import {
   ICON_TYPES_LIST,
   INNER_ICON_TYPES_LIST,
 } from "../constants/iconTypeConsts";
+import CollectionCard from "../components/CollectionCard";
+import CollectionGrid from "../components/CollectionGrid";
 
 export default function DesignSystem() {
   return (
@@ -301,6 +303,54 @@ export default function DesignSystem() {
             </div>
           </div>
         </div>
+      </div>
+      <div>
+        <div className="text-dark bg-light py-4 my-3">
+          <h1 className="display-6 ms-5">Componets: Collection Card</h1>
+        </div>
+        <div className="py-2 ms-5">
+          <div className="row pt-2">
+            <div className="col-3">
+              <CollectionCard
+                title={"Education"}
+                iconVariant={ICON_TYPES_LIST.TYPE_1}
+                innerIconVarient={INNER_ICON_TYPES_LIST.TYPE_1}
+                bgColour={"#C3FFB9"}
+                innerIconBg={"/images/book.png"}
+              />
+            </div>
+            <div className="col-3">
+              <CollectionCard
+                title={"Documents"}
+                iconVariant={ICON_TYPES_LIST.TYPE_1}
+                innerIconVarient={INNER_ICON_TYPES_LIST.TYPE_1}
+                bgColour={"#FFF8B9"}
+                innerIconBg={"/images/doc.png"}
+              />
+            </div>
+            <div className="col-3"></div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div className="text-dark bg-light py-4 my-3">
+          <h1 className="display-6 ms-5">Componets: Collection Card Table Scroll </h1>
+        </div>
+        <div className="py-2 ms-5">
+          <CollectionGrid title={"Recent Collection"}/>
+          <CollectionGrid title={"All Collection"}/>
+        </div>
+        {/* <div className="py-2 ms-5">
+          <div className="row pt-2">
+            <div className="col-3">
+              
+            </div>
+            <div className="col-3">
+              
+            </div>
+            <div className="col-3"></div>
+          </div>
+        </div> */}
       </div>
     </div>
   );
