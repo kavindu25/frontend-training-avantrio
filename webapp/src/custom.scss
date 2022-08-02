@@ -137,6 +137,14 @@ body {
 //     color: #3E51B4;
 // }
 
+// btn icon
+.btn-icon {
+  border: none;
+  background-color: #ffffff;
+}
+
+// input 
+
 input:invalid {
   color: $danger;
 }
@@ -221,7 +229,7 @@ input:invalid {
   display: flex;
   flex-wrap: nowrap;
   overflow-x: auto;
-  
+
   // to hide the scrollbar
   &::-webkit-scrollbar {
     display: none;

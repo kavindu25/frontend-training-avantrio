@@ -5,7 +5,7 @@ import {
   INNER_ICON_TYPES_LIST,
 } from "../constants/iconTypeConsts";
 
-export default function CollectionCard({
+export default function CollectionCardWide({
   title,
   iconVariant,
   innerIconVarient,
@@ -23,8 +23,8 @@ export default function CollectionCard({
       className="card mx-3 my-5 position-relative"
       style={{
         ...customStyles,
-        width: "249px",
-        height: "176px",
+        width: "323px",
+        height: "135px",
         display: "grid",
         placeItems: "center",
         cursor: "move",
@@ -43,44 +43,22 @@ export default function CollectionCard({
           . . .
         </h3>
       </button>
-      <div
-        className="card-body"
-        style={{ display: "grid", placeItems: "center" }}
-      >
-        <div className="row mt-3">
+      <div className="d-flex align-items-center flex-row py-4 pe-5">
+        <div className="me-3">
           <CreateIcon
             iconVariant={ICON_TYPES_LIST.TYPE_1}
             innerIconVarient={INNER_ICON_TYPES_LIST.TYPE_1}
             bgColour={bgColour}
             innerIconBg={innerIconBg}
           />
-          <span
-            className="position-absolute top-30 start-60 badge border border-light rounded-circle bg-primary py-2"
-            style={{
-              position: "absolute",
-              top: "25px",
-              right: "80px",
-              // display: "grid",
-              // placeItems: "center",
-              color: "#ffffff",
-              width: "28px",
-              height: "28px",
-              borderRadius: "50%",
-            }}
-          >
-            <p className="mx-auto" style={{ align: "center" }}>
-              {getNumberOfCollectionItems()}
-            </p>
-          </span>
         </div>
-        <div className="row mt-3">
-          <p
-            className="para1"
-            style={{ color: "#30387DB0", fontWeight: "600" }}
-          >
-            {title}
-          </p>
-        </div>
+        <div className="text-primary para1 mb-4">{title}</div>
+      </div>
+      <div
+        className="position-absolute"
+        style={{ bottom: "10px", right: "18px" }}
+      >
+        <img src="/images/heart-grey.png" alt="heart icon" />
       </div>
     </div>
   );

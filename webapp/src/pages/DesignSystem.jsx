@@ -7,6 +7,7 @@ import {
 } from "../constants/iconTypeConsts";
 import CollectionCard from "../components/CollectionCard";
 import CollectionGrid from "../components/CollectionGrid";
+import CollectionCardWide from "../components/CollectionCardWide";
 
 export default function DesignSystem() {
   return (
@@ -334,11 +335,14 @@ export default function DesignSystem() {
       </div>
       <div>
         <div className="text-dark bg-light py-4 my-3">
-          <h1 className="display-6 ms-5">Componets: Collection Card Table Scroll </h1>
+          <h1 className="display-6 ms-5">
+            Componets: Collection Card Table Scroll{" "}
+          </h1>
         </div>
         <div className="py-2 ms-5">
-          <CollectionGrid title={"Recent Collection"}/>
-          <CollectionGrid title={"All Collection"}/>
+          <CollectionGrid title={"My Favorite"} isFavourite={true} />
+          <CollectionGrid title={"Recent Collection"} />
+          <CollectionGrid title={"All Collection"} />
         </div>
         {/* <div className="py-2 ms-5">
           <div className="row pt-2">

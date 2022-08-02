@@ -9,7 +9,7 @@ export default function CreateIcon({
   innerIconCustomStyles,
 }) {
   return (
-    <div>
+    <button className="btn-icon">
       <div
         className={iconVariant}
         style={{
@@ -27,6 +27,6 @@ export default function CreateIcon({
           }}
         ></div>
       </div>
-    </div>
+    </button>
   );
 }
