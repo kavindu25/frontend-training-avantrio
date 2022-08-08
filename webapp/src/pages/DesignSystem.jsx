@@ -9,6 +9,7 @@ import CollectionCard from "../components/CollectionCard";
 import CollectionGrid from "../components/CollectionGrid";
 import CollectionCardWide from "../components/CollectionCardWide";
 import Searchbar from "../components/Searchbar";
+import AddCollection from "../components/AddCollection";
 
 export default function DesignSystem() {
   return (
@@ -354,6 +355,17 @@ export default function DesignSystem() {
         </div>
         <div className="py-2 ms-5">
           <Searchbar />
+        </div>
+      </div>
+      <div>
+        <div className="text-dark bg-light py-4 my-3">
+          <h1 className="display-6 ms-5">
+            Componets: Add Collection 
+          </h1>
+        </div>
+        <div className="py-2 ms-5">
+          <AddCollection
+          />
         </div>
       </div>
     </div>
