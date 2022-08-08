@@ -8,6 +8,7 @@ import {
 import CollectionCard from "../components/CollectionCard";
 import CollectionGrid from "../components/CollectionGrid";
 import CollectionCardWide from "../components/CollectionCardWide";
+import Searchbar from "../components/Searchbar";
 
 export default function DesignSystem() {
   return (
@@ -336,7 +337,7 @@ export default function DesignSystem() {
       <div>
         <div className="text-dark bg-light py-4 my-3">
           <h1 className="display-6 ms-5">
-            Componets: Collection Card Table Scroll{" "}
+            Componets: Collection Card Table Scroll
           </h1>
         </div>
         <div className="py-2 ms-5">
@@ -344,17 +345,16 @@ export default function DesignSystem() {
           <CollectionGrid title={"Recent Collection"} />
           <CollectionGrid title={"All Collection"} />
         </div>
-        {/* <div className="py-2 ms-5">
-          <div className="row pt-2">
-            <div className="col-3">
-              
-            </div>
-            <div className="col-3">
-              
-            </div>
-            <div className="col-3"></div>
-          </div>
-        </div> */}
+      </div>
+      <div>
+        <div className="text-dark bg-light py-4 my-3">
+          <h1 className="display-6 ms-5">
+            Componets: Searchbar
+          </h1>
+        </div>
+        <div className="py-2 ms-5">
+          <Searchbar />
+        </div>
       </div>
     </div>
   );
