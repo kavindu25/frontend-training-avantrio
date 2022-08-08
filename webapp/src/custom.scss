@@ -149,6 +149,11 @@ input:invalid {
   color: $danger;
 }
 
+input[type='color'] {
+  width: 50%;
+  border: none;
+}
+
 //icons
 
 .icon-type-1 {

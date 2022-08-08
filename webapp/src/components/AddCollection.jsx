@@ -5,6 +5,7 @@ import {
   INNER_ICON_TYPES_LIST,
 } from "../constants/iconTypeConsts";
 import { Form, SubmitButton, TextField } from "./forms";
+import ColorPicker from "./forms/ColorPicker";
 
 export default function AddCollection() {
   return (
@@ -18,6 +19,7 @@ export default function AddCollection() {
             <TextField
               name="collection_name"
               label="Collection Name"
+              placeholder={"Collection name here"}
               inputClass="form-control-lg"
             />
           </div>
@@ -25,11 +27,15 @@ export default function AddCollection() {
             <TextField
               name="select_icon_color"
               label="Select Icon Color"
+              placeholder={"Selec a color"}
               type="color"
-              inputClass="form-control-lg"
+              inputClass="form-control-lg px-5"
             />
           </div>
-          <div className="py-3 text-left">
+          {/* <div className="py-3">
+            <ColorPicker />
+          </div> */}
+          <div className="py-3">
             <SubmitButton 
                 size={"lg"}
                 name={"Add Collection"}
