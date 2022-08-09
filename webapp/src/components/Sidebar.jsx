@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import AddCollection from "./AddCollection";
+import AddCollectionCard from "./AddCollectionCard";
 import CreateIcon from "./CreateIcon";
 import Searchbar from "./Searchbar";
 
@@ -54,7 +54,7 @@ export default function Sidebar() {
         </div>
       </div>
       <div className="px-4 py-5">
-        <AddCollection />
+        <AddCollectionCard />
       </div>
     </div>
     // <nav

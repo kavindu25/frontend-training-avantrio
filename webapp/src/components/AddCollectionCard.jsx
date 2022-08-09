@@ -7,7 +7,7 @@ import {
 import { Form, SubmitButton, TextField } from "./forms";
 import ColorPicker from "./forms/ColorPicker";
 
-export default function AddCollection() {
+export default function AddCollectionCard() {
   return (
     <div className="card px-3 py-4" style={{width:"407px", height:"365px"}}> 
       <div className="mx-2 pb-1">

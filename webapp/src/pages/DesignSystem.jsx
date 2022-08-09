@@ -7,10 +7,10 @@ import {
 } from "../constants/iconTypeConsts";
 import CollectionCard from "../components/CollectionCard";
 import CollectionGrid from "../components/CollectionGrid";
-import CollectionCardWide from "../components/CollectionCardWide";
 import Searchbar from "../components/Searchbar";
-import AddCollection from "../components/AddCollection";
+import AddCollectionCard from "../components/AddCollectionCard";
 import Sidebar from "../components/Sidebar";
+import AddLinkCard from "../components/AddLinkCard";
 
 export default function DesignSystem() {
   return (
@@ -334,7 +334,15 @@ export default function DesignSystem() {
                   innerIconBg={"/images/doc.png"}
                 />
               </div>
-              <div className="col-3"></div>
+              <div className="col-3">
+                <CollectionCard
+                  title={"Documents"}
+                  iconVariant={ICON_TYPES_LIST.TYPE_1}
+                  innerIconVarient={INNER_ICON_TYPES_LIST.TYPE_1}
+                  bgColour={"#FFF8B9"}
+                  innerIconBg={"/images/doc.png"}
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -360,10 +368,18 @@ export default function DesignSystem() {
         </div>
         <div>
           <div className="text-dark bg-light py-4 my-3">
-            <h1 className="display-6 ms-5">Componets: Add Collection</h1>
+            <h1 className="display-6 ms-5">Componets: Add Collection Card</h1>
           </div>
           <div className="py-2 ms-5">
-            <AddCollection />
+            <AddCollectionCard />
+          </div>
+        </div>
+        <div>
+          <div className="text-dark bg-light py-4 my-3">
+            <h1 className="display-6 ms-5">Componets: Add Link Card</h1>
+          </div>
+          <div className="py-2 ms-5">
+            <AddLinkCard />
           </div>
         </div>
       </div>
