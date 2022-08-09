@@ -23,10 +23,12 @@ body {
     */
   bottom: 0;
   /* rtl:remove */
-  left: 0;
+  right: 0;
   z-index: 100; /* Behind the navbar */
   padding: 48px 0 0; /* Height of navbar */
-  box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.1);
+  // box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.1);
+  width: 450px;
+  background-color: #ffffff;
 }
 
 @media (max-width: 767.98px) {
@@ -140,7 +142,8 @@ body {
 // btn icon
 .btn-icon {
   border: none;
-  background-color: #ffffff;
+  border-radius: 50%;
+  background-color: transparent;
 }
 
 // input

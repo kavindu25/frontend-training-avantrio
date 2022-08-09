@@ -3,7 +3,7 @@ import { Form, TextField } from "./forms";
 export default function Searchbar() {
   return (
     <div className="row py-4">
-      <div className="col-3">
+      <div className="">
         <Form initialValues={{}}>
           <TextField
             name="searchbar"

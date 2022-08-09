@@ -52,6 +52,16 @@ export default function CollectionGrid({ title, data, isFavourite }) {
                 bgColour={"#C3FFB9"}
                 innerIconBg={"/images/book.png"}
               />
+              <CollectionCardWide
+                title={"Music"}
+                bgColour={"#C3FFB9"}
+                innerIconBg={"/images/book.png"}
+              />
+              <CollectionCardWide
+                title={"Music"}
+                bgColour={"#C3FFB9"}
+                innerIconBg={"/images/book.png"}
+              />
             </>
           ) : (
             <>
@@ -63,6 +73,18 @@ export default function CollectionGrid({ title, data, isFavourite }) {
               />
               <CollectionCard
                 title={"Documents"}
+                bgColour={"#C3FFB9"}
+                innerIconBg={"/images/book.png"}
+                customStyles={{ flex: "0 0 auto" }}
+              />
+              <CollectionCard
+                title={"Education"}
+                bgColour={"#C3FFB9"}
+                innerIconBg={"/images/book.png"}
+                customStyles={{ flex: "0 0 auto" }}
+              />
+              <CollectionCard
+                title={"Education"}
                 bgColour={"#C3FFB9"}
                 innerIconBg={"/images/book.png"}
                 customStyles={{ flex: "0 0 auto" }}
