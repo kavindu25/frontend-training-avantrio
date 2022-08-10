@@ -5,8 +5,10 @@ import {
   INNER_ICON_TYPES_LIST,
 } from "../constants/iconTypeConsts";
 import CollectionItem from "./CollectionItem";
+import { useModal } from "../hooks/modalsHooks";
 
 export default function CollectionItemsCard({ title, data }) {
+  const { showModal } = useModal();
   const handleAddLink = () => {};
   return (
     <div className="collection-items-card card position-relative">
@@ -75,7 +77,13 @@ export default function CollectionItemsCard({ title, data }) {
         <button
           type="button"
           className="btn btn-primary btn-lg"
-          onClick={handleAddLink}
+          //   onClick={handleAddLink}
+          onClick={() => {
+            showModal({
+              modalType: "SuccessModal",
+              modalProps: { isLink: "true"},
+            });
+          }}
           style={{ width: "210px" }}
         >
           Add Link

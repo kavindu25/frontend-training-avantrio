@@ -12,12 +12,14 @@ import { ModalContext } from "../../providers/ModalProvider";
 
 import ExampleModalOne from "../examples/ExampleModalOne";
 import ExampleModalTwo from "../examples/ExampleModalTwo";
+import SuccessModal from "./SuccessModal";
 import "./modal-container.scss";
 
 // register modals here.
 const modalContent = {
   ExampleModalOne,
   ExampleModalTwo,
+  SuccessModal,
 };
 
 export default function ModalContainer() {
