@@ -11,6 +11,8 @@ import Searchbar from "../components/Searchbar";
 import AddCollectionCard from "../components/AddCollectionCard";
 import Sidebar from "../components/Sidebar";
 import AddLinkCard from "../components/AddLinkCard";
+import CollectionItem from "../components/CollectionItem";
+import CollectionItemsCard from "../components/CollectionItemsCard";
 
 export default function DesignSystem() {
   return (
@@ -380,6 +382,22 @@ export default function DesignSystem() {
           </div>
           <div className="py-2 ms-5">
             <AddLinkCard />
+          </div>
+        </div>
+        <div>
+          <div className="text-dark bg-light py-4 my-3">
+            <h1 className="display-6 ms-5">Componets: Collection item</h1>
+          </div>
+          <div className="py-2 ms-5">
+            <CollectionItem />
+          </div>
+        </div>
+        <div>
+          <div className="text-dark bg-light py-4 my-3">
+            <h1 className="display-6 ms-5">Componets: Collection items card</h1>
+          </div>
+          <div className="py-2 ms-5">
+            <CollectionItemsCard title={"Movies"} />
           </div>
         </div>
       </div>
