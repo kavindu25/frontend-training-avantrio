@@ -28,7 +28,7 @@ export default function SuccessModal({ isLink }) {
           }}
         />
       </div>
-      <div>
+      <div className="py-3">
         <>
           {isLink ? (
             <h2>Successfully created the link</h2>
