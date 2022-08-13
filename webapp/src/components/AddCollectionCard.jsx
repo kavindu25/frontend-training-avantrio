@@ -27,14 +27,11 @@ export default function AddCollectionCard() {
             <TextField
               name="select_icon_color"
               label="Select Icon Color"
-              placeholder={"Selec a color"}
+              placeholder={"Select a colour"}
               type="color"
               inputClass="form-control-lg px-5"
             />
           </div>
-          {/* <div className="py-3">
-            <ColorPicker />
-          </div> */}
           <div className="py-3">
             <SubmitButton 
                 size={"lg"}
