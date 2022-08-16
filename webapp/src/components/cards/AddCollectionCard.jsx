@@ -1,5 +1,5 @@
 import React from "react";
-import { Form, SubmitButton, TextField } from "../forms";
+import { Form, SubmitButton, TextField, ColorPicker } from "../forms";
 import "./card.scss";
 
 export default function AddCollectionCard() {
@@ -19,13 +19,7 @@ export default function AddCollectionCard() {
             />
           </div>
           <div className="py-2">
-            <TextField
-              name="color"
-              label="Select Icon Color"
-              placeholder={"Select a colour"}
-              type="color"
-              inputClass="form-control-lg px-5"
-            />
+            <ColorPicker />
           </div>
           <div className="py-3">
             <SubmitButton size={"lg"} name={"Add Collection"} />
