@@ -4,7 +4,7 @@ export default function Searchbar() {
   return (
     <div className="row py-4">
       <div className="">
-        <Form initialValues={{}}>
+        <Form initialValues={{ searchbar: "" }}>
           <TextField
             name="searchbar"
             placeholder={"Search"}

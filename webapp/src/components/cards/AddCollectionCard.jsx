@@ -4,15 +4,15 @@ import "./card.scss";
 
 export default function AddCollectionCard() {
   return (
-    <div className="card px-3 py-4 add-collection-card"> 
+    <div className="card px-3 py-4 add-collection-card">
       <div className="mx-2 pb-1">
         <p className="para1">Add Collection</p>
       </div>
       <div className="mx-2">
-        <Form initialValues={{}}>
+        <Form initialValues={{ collectionName: "", color: "" }}>
           <div className="py-2">
             <TextField
-              name="collection_name"
+              name="collectionName"
               label="Collection Name"
               placeholder={"Collection name here"}
               inputClass="form-control-lg"
@@ -20,7 +20,7 @@ export default function AddCollectionCard() {
           </div>
           <div className="py-2">
             <TextField
-              name="select_icon_color"
+              name="color"
               label="Select Icon Color"
               placeholder={"Select a colour"}
               type="color"
@@ -28,10 +28,7 @@ export default function AddCollectionCard() {
             />
           </div>
           <div className="py-3">
-            <SubmitButton 
-                size={"lg"}
-                name={"Add Collection"}
-            />
+            <SubmitButton size={"lg"} name={"Add Collection"} />
           </div>
         </Form>
       </div>
