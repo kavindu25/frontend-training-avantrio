@@ -352,10 +352,12 @@ input[type="color"] {
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
-
     // to hide the scrollbar
+    -ms-overflow-style: none;
+    scrollbar-width: none;
     &::-webkit-scrollbar {
       display: none;
+      
     }
   }
 }
