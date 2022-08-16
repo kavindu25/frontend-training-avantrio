@@ -12,7 +12,7 @@ export default function Searchbar() {
             style={{
               backgroundImage: 'url("/images/search.png")',
               backgroundRepeat: "no-repeat",
-              backgroundPosition: "left",
+              backgroundPosition: "12px 20px",
             }}
           />
         </Form>
