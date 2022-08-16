@@ -20,33 +20,15 @@ export default function CollectionCard({
   return (
     <div
       draggable="true"
-      className="card mx-3 my-5 position-relative"
+      className="card mx-3 my-5 position-relative collection-card"
       style={{
         ...customStyles,
-        width: "249px",
-        height: "176px",
-        display: "grid",
-        placeItems: "center",
-        cursor: "move",
       }}
     >
-      <button
-        className="position-absolute"
-        style={{
-          border: "none",
-          backgroundColor: "#FFFFFF",
-          top: "3px",
-          right: "15px",
-        }}
-      >
-        <h3 className="dot-menu" style={{ color: "#D1D1D1" }}>
-          . . .
-        </h3>
+      <button className="position-absolute dot-menu">
+        <h3>. . .</h3>
       </button>
-      <div
-        className="card-body"
-        style={{ display: "grid", placeItems: "center" }}
-      >
+      <div className="card-body collection-card-body">
         <div className="row mt-3">
           <CreateIcon
             iconVariant={ICON_TYPES_LIST.TYPE_1}
@@ -54,32 +36,12 @@ export default function CollectionCard({
             bgColour={bgColour}
             innerIconBg={innerIconBg}
           />
-          <span
-            className="position-absolute top-30 start-60 badge border border-light rounded-circle bg-primary py-2"
-            style={{
-              position: "absolute",
-              top: "25px",
-              right: "80px",
-              // display: "grid",
-              // placeItems: "center",
-              color: "#ffffff",
-              width: "28px",
-              height: "28px",
-              borderRadius: "50%",
-            }}
-          >
-            <p className="mx-auto" style={{ align: "center" }}>
-              {getNumberOfCollectionItems()}
-            </p>
+          <span className="badge border border-light rounded-circle bg-primary py-2 notification-dot-wrapper">
+            <p className="mx-auto">{getNumberOfCollectionItems()}</p>
           </span>
         </div>
         <div className="row mt-3">
-          <p
-            className="para1"
-            style={{ color: "#30387DB0", fontWeight: "600" }}
-          >
-            {title}
-          </p>
+          <p className="para1 collection-title">{title}</p>
         </div>
       </div>
     </div>

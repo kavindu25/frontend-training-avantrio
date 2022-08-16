@@ -12,7 +12,7 @@ export default function CollectionItemsCard({ title, data }) {
   const handleAddLink = () => {};
   return (
     <div className="collection-items-card card position-relative">
-      <div className="position-absolute" style={{ top: "32px", left: "33px" }}>
+      <div className="collection-icon">
         <CreateIcon
           iconVariant={ICON_TYPES_LIST.TYPE_1}
           innerIconVarient={INNER_ICON_TYPES_LIST.TYPE_1}
@@ -20,31 +20,18 @@ export default function CollectionItemsCard({ title, data }) {
           innerIconBg={"/images/music.png"}
         />
       </div>
-      <div className="position-absolute" style={{ top: "42px", left: "145px" }}>
+      <div className="position-absolute collection-title">
         <h2>{title}</h2>
       </div>
-      <div className="position-absolute" style={{ top: "86px", left: "145px" }}>
+      <div className="position-absolute favourite-icon">
         <img src="/images/heart-grey.png" alt="heart icon" />
       </div>
-      <div className="">
-        <button
-          className="position-absolute"
-          style={{
-            border: "none",
-            backgroundColor: "#FFFFFF",
-            top: "28px",
-            right: "80px",
-          }}
-        >
-          <h3 className="dot-menu" style={{ color: "#D1D1D1" }}>
-            . . .
-          </h3>
+      <div>
+        <button className="position-absolute dot-menu">
+          <h3>. . .</h3>
         </button>
       </div>
-      <div
-        className="collection-items-table position-absolute"
-        style={{ top: "156px", left: "57px" }}
-      >
+      <div className="collection-items-table position-absolute">
         <div className="my-3 ">
           <CollectionItem title={"music"} />
         </div>
@@ -70,21 +57,17 @@ export default function CollectionItemsCard({ title, data }) {
           <CollectionItem title={"music"} />
         </div>
       </div>
-      <div
-        className="position-absolute"
-        style={{ bottom: "57px", left: "41px" }}
-      >
+      <div className="position-absolute add-link-btn-wrapper">
         <button
           type="button"
-          className="btn btn-primary btn-lg"
+          className="btn btn-primary btn-lg add-link-btn"
           //   onClick={handleAddLink}
           onClick={() => {
             showModal({
               modalType: "SuccessModal",
-              modalProps: { isLink: "true"},
+              modalProps: { isLink: "true" },
             });
           }}
-          style={{ width: "210px" }}
         >
           Add Link
         </button>

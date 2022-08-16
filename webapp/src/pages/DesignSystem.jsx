@@ -8,10 +8,9 @@ import {
 import CollectionCard from "../components/CollectionCard";
 import CollectionGrid from "../components/CollectionGrid";
 import Searchbar from "../components/Searchbar";
-import AddCollectionCard from "../components/AddCollectionCard";
 import Sidebar from "../components/Sidebar";
-import AddLinkCard from "../components/AddLinkCard";
 import CollectionItem from "../components/CollectionItem";
+import { AddCollectionCard, AddLinkCard } from "../components/cards";
 import CollectionItemsCard from "../components/CollectionItemsCard";
 
 export default function DesignSystem() {

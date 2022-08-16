@@ -144,6 +144,11 @@ body {
   border: none;
   border-radius: 50%;
   background-color: transparent;
+
+  .outter-varient {
+    display: grid;
+    place-items: center;
+  }
 }
 
 // input
@@ -232,18 +237,6 @@ input[type="color"] {
   line-height: 18px;
 }
 
-// horizontal scrollable menu
-.scroll-menu-wrapper {
-  display: flex;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-
-  // to hide the scrollbar
-  &::-webkit-scrollbar {
-    display: none;
-  }
-}
-
 // searchbar
 .searchbar {
   background: #ffffff;
@@ -252,8 +245,91 @@ input[type="color"] {
   border-radius: 17.7395px;
 }
 
-// components :-
-// collection card/ card wide styles: to-do
+// collection card
+.collection-card {
+  width: 249px;
+  height: 176px;
+  display: grid;
+  place-items: center;
+  cursor: move;
+
+  .dot-menu {
+    border: none;
+    background-color: #ffffff;
+    color: #d1d1d1;
+    top: 3px;
+    right: 15px;
+  }
+
+  .collection-card-body {
+    display: grid;
+    place-items: center;
+  }
+
+  .notification-dot-wrapper {
+    position: absolute;
+    top: 25px;
+    right: 80px;
+    color: #ffffff;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+  }
+
+  .collection-title {
+    color: #30387db0;
+    font-weight: 600;
+  }
+}
+
+// collection card wide
+.collection-card-wide {
+  width: 323px;
+  height: 135px;
+  display: grid;
+  place-items: center;
+  cursor: move;
+
+  .dot-menu {
+    border: none;
+    background-color: #FFFFFF;
+    color: #D1D1D1; 
+    top: 3px;
+    right: 15px;
+  }
+
+  .favourite-icon {
+    position: absolute;
+    bottom: 10px;
+    right: 18px; 
+  }
+}
+
+// collection-grid
+.collection-grid {
+  .collection-grid-title {
+    color: #30387DB0; 
+  }
+
+  .horizontal-line {
+    width: 80%;
+    top: 10px;
+    left: 190px;
+    border: 1.18264px solid rgba(48, 56, 125, 0.12);
+  }
+
+  // horizontal scrollable menu
+  .scroll-menu-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+
+    // to hide the scrollbar
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
 
 // collection item
 .collection-item {
@@ -263,6 +339,12 @@ input[type="color"] {
   color: #30387db0;
   border: 1px solid rgba(48, 56, 125, 0.24);
   border-radius: 12px;
+
+  .url-wrapper {
+    width: 400px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
 }
 
 // colection items card
@@ -272,12 +354,48 @@ input[type="color"] {
   background: #ffffff;
   color: #30387db0;
 
+  .collection-icon {
+    position: absolute;
+    top: 32px;
+    left: 33px; 
+  }
+
+  .collection-title {
+    top: 42px;
+    left: 145px; 
+  }
+
+  .favourite-icon {
+    top: 86px;
+    left: 145px; 
+  }
+
+  .dot-menu {
+    border: none;
+    background-color: #FFFFFF;
+    color: #D1D1D1;
+    top: 28px;
+    right: 80px;
+  }
+
   .collection-items-table {
+    top: 156px; 
+    left: 57px;
     width: 1025px;
     height: 600px;
     overflow-x: hidden;
     overflow-y: auto;
   }
+
+  .add-link-btn-wrapper {
+    bottom: 57px; 
+    left: 41px;
+
+    .add-link-btn {
+      width: 210px;
+    }
+  }
+  
 }
 
 //modals

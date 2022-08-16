@@ -5,7 +5,7 @@ import {
   INNER_ICON_TYPES_LIST,
 } from "../constants/iconTypeConsts";
 
-export default function CollectionItem({linkName, url}) {
+export default function CollectionItem({ linkName, url }) {
   return (
     <div className="collection-item d-flex align-items-center justify-content-evenly px-1">
       <div className="d-flex align-items-center justify-content-evenly">
@@ -33,14 +33,7 @@ export default function CollectionItem({linkName, url}) {
           <p className="para1 my-auto ">Link name goes here</p>
         </div>
       </div>
-      <div
-        className=""
-        style={{
-          width: "400px",
-          overflowWrap: "break-word",
-          wordWrap: "break-word",
-        }}
-      >
+      <div className="url-wrapper">
         <p className="para1 my-auto">
           http//:www.samplelinkgoesheretoexplainthesamplemovielink.com/
         </p>

@@ -1,15 +1,10 @@
 import React from "react";
-import CreateIcon from "./CreateIcon";
-import {
-  ICON_TYPES_LIST,
-  INNER_ICON_TYPES_LIST,
-} from "../constants/iconTypeConsts";
-import { Form, SubmitButton, TextField } from "./forms";
-import ColorPicker from "./forms/ColorPicker";
+import { Form, SubmitButton, TextField } from "../forms";
+import "./card.scss";
 
 export default function AddCollectionCard() {
   return (
-    <div className="card px-3 py-4" style={{width:"407px", height:"365px"}}> 
+    <div className="card px-3 py-4 add-collection-card"> 
       <div className="mx-2 pb-1">
         <p className="para1">Add Collection</p>
       </div>

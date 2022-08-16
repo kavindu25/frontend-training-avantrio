@@ -1,9 +1,10 @@
 import React from "react";
-import { Form, SubmitButton, TextField } from "./forms";
+import { Form, SubmitButton, TextField } from "../forms";
+import "./card.scss";
 
 export default function AddLinkCard() {
   return (
-    <div className="card px-3 py-4" style={{width:"407px", height:"365px"}}> 
+    <div className="card px-3 py-4 add-link-card"> 
       <div className="mx-2 pb-1">
         <p className="para1">Add Link</p>
       </div>

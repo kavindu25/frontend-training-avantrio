@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import AddCollectionCard from "./AddCollectionCard";
 import CreateIcon from "./CreateIcon";
 import Searchbar from "./Searchbar";
+import { AddCollectionCard, AddLinkCard } from "../components/cards";
 
 export default function Sidebar() {
   return (
