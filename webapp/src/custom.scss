@@ -165,9 +165,8 @@ input[type="color"] {
 // color picker
 .color-picker {
   .color-picker-label {
-    color:#30387D85;
+    color: #30387d85;
     font-weight: 600;
-
   }
 
   .color-picker-input-wrapper {
@@ -177,19 +176,57 @@ input[type="color"] {
     background: rgba(226, 226, 230, 0.18);
     border: 1px solid rgba(48, 56, 125, 0.32);
     border-radius: 12px;
-  
-    .color-selector{
+
+    .color-selector {
       position: absolute;
       top: 12px;
       right: 15px;
       width: 130px;
       height: 31px;
       box-shadow: none;
-  
     }
+
+    .color-selected {
+      position: absolute;
+      top: 12px;
+      left: 15px;
+      width: 500px;
+    }
+
+    select {
+      position: absolute;
+      top: 12px;
+      right: 15px;
+      width: 110px;
+      height: 31px;
+      // outline: none;
+      // user-select: none;
+
+      .purple {
+        background-color: #bc45a2;
+      }
+      .orange {
+        background-color: #e16347;
+      }
+      .green {
+        background-color: #52a944;
+      }
+      .yellow {
+        background-color: #fff8b9;
+      }
+      .blue {
+        background-color: #5698b5;
+      }
+      .light-blue {
+        background-color: #b9bcff;
+      }
+    }
+
+    // select:active, select:hover {
+    //   outline: none
+    // }
   }
 }
-
 
 //icons
 
@@ -357,7 +394,6 @@ input[type="color"] {
     scrollbar-width: none;
     &::-webkit-scrollbar {
       display: none;
-      
     }
   }
 }
