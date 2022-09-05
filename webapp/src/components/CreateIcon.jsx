@@ -9,14 +9,12 @@ export default function CreateIcon({
   innerIconCustomStyles,
 }) {
   return (
-    <div>
+    <button className="btn-icon">
       <div
-        className={iconVariant}
+        className={[iconVariant, "outter-varient"].join(" ")}
         style={{
           ...customStyles,
           backgroundColor: bgColour,
-          display: "grid",
-          placeItems: "center",
         }}
       >
         <div
@@ -27,6 +25,6 @@ export default function CreateIcon({
           }}
         ></div>
       </div>
-    </div>
+    </button>
   );
 }

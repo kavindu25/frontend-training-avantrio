@@ -1,7 +1,7 @@
 import React from "react";
 import { useFormikContext } from "formik";
 
-export default function SubmitButton({ children = "Submit", size, variant }) {
+export default function SubmitButton({ name, size, variant }) {
   const { isSubmitting } = useFormikContext();
 
   const getButtonClassName = () => {
@@ -35,7 +35,7 @@ export default function SubmitButton({ children = "Submit", size, variant }) {
           <span className="ms-2">Loading...</span>
         </>
       ) : (
-        children
+        name || "Submit"
       )}
     </button>
   );
