@@ -3,6 +3,8 @@ import AppLayout from "./components/AppLayout";
 import SignoutPage from "./pages/auth/SignoutPage";
 import SignInPage from "./pages/auth/SignInPage";
 import ModalContainer from "./components/modals/ModalContainer";
+import LogInPage from "./pages/auth/pages/LogInPage";
+import SignUpPage from "./pages/auth/pages/SignUpPage";
 
 // example componets. remove after initialising a project.
 import TablesExamplePage from "./pages/examples/TablesExamplePage";
@@ -27,6 +29,8 @@ function App() {
         <Route path="/testdesign" element={<DesignSystem/>} />
         <Route path="/signout" element={<SignoutPage />} />
         <Route path="/signin" element={<SignInPage />} />
+        <Route path="/login" element={<LogInPage />} />
+        <Route path="/signup" element={<SignUpPage />} />
       </Routes>
     </div>
   );

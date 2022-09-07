@@ -3,3 +3,39 @@
   height: 375px;
   width: 407px;
 }
+
+.signin-form-card {
+  position: absolute;
+  width: 562px;
+  height: 779.34px;
+  left: 1095.9px;
+  top: 97px;
+  background: #ffffff;
+  box-shadow: 0px 17.7395px 137.186px rgba(48, 56, 125, 0.12);
+  border-radius: 17.7395px;
+
+  .heading {
+    color: rgba(48, 56, 125, 0.69);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+  }
+}
+
+.signup-form-card {
+  position: absolute;
+  width: 562px;
+  height: 835px;
+  left: 1098.8px;
+  top: 97px;
+  background: #ffffff;
+  box-shadow: 0px 17.7395px 137.186px rgba(48, 56, 125, 0.12);
+  border-radius: 17.7395px;
+
+  .heading {
+    color: rgba(48, 56, 125, 0.69);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+  }
+}
