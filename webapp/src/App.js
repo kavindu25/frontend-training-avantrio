@@ -5,6 +5,7 @@ import SignInPage from "./pages/auth/SignInPage";
 import ModalContainer from "./components/modals/ModalContainer";
 import LogInPage from "./pages/auth/pages/LogInPage";
 import SignUpPage from "./pages/auth/pages/SignUpPage";
+import HomePage from "./pages/HomePage";
 
 // example componets. remove after initialising a project.
 import TablesExamplePage from "./pages/examples/TablesExamplePage";
@@ -26,11 +27,12 @@ function App() {
           <Route path="forms" element={<FormsExamplePage />} />
           <Route path="modals" element={<ModalsExamplePage />} />
         </Route>
-        <Route path="/testdesign" element={<DesignSystem/>} />
+        <Route path="/testdesign" element={<DesignSystem />} />
         <Route path="/signout" element={<SignoutPage />} />
         <Route path="/signin" element={<SignInPage />} />
         <Route path="/login" element={<LogInPage />} />
         <Route path="/signup" element={<SignUpPage />} />
+        <Route path="/home" element={<HomePage />} />
       </Routes>
     </div>
   );
