@@ -1,0 +1,14 @@
+.login-page,.signup-page {
+  .page-heading {
+    position: absolute;
+    top: 283px;
+    left: 242px;
+    font-style: normal;
+    font-weight: 700;
+    background: linear-gradient(180deg, #6a82ff 0%, #e16aff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    // text-fill-color: transparent;
+  }
+}

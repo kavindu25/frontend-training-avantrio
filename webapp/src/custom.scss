@@ -364,6 +364,20 @@ input[type="color"] {
     right: 15px;
   }
 
+  .notification-dot-wrapper {
+    position: absolute;
+    top: 25px;
+    left: 100px;
+    color: #ffffff;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+  }
+
+  .title {
+    font-weight: 600;
+  }
+
   .favourite-icon {
     position: absolute;
     bottom: 10px;
@@ -374,13 +388,15 @@ input[type="color"] {
 // collection-grid
 .collection-grid {
   .collection-grid-title {
+    font-weight: 600;
+    font-size: 20px;
     color: #30387db0;
   }
 
   .horizontal-line {
-    width: 80%;
+    width: 70%;
     top: 10px;
-    left: 190px;
+    left: 250px;
     border: 1.18264px solid rgba(48, 56, 125, 0.12);
   }
 

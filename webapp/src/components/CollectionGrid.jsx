@@ -10,12 +10,12 @@ export default function CollectionGrid({ title, data, isFavourite }) {
 
   return (
     <div className="my-5 collection-grid">
-      <div className="row position-relative">
+      <div className="row position-relative ps-4">
         <h3 className="collection-grid-title">{title}</h3>
         {/* horizontal line */}
         <div className="position-absolute horizontal-line"></div>
       </div>
-      <div className="row scroll-menu-wrapper">
+      <div className="row scroll-menu-wrapper ps-4">
         <>
           {isFavourite ? (
             <>

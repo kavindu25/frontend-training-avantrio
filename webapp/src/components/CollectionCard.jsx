@@ -20,7 +20,7 @@ export default function CollectionCard({
   return (
     <div
       draggable="true"
-      className="card mx-3 my-5 position-relative collection-card"
+      className="card mx-3 mt-4 mb-5 position-relative collection-card"
       style={{
         ...customStyles,
       }}
