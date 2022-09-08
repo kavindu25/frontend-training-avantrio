@@ -14,13 +14,13 @@ import CollectionItemsCard from "../components/CollectionItemsCard";
 
 export default function HomePage() {
   return (
-    <div>
+    <div className="ps-5">
       <Sidebar />
       <div className="container-fluid home-page">
         <div className="heading px-5 py-4">
-          <h2>Home</h2>
+          <h2 className="ps-4">Home</h2>
         </div>
-        <div className="px-5 pt-3">
+        <div className="px-5 pt-3 ms-4">
           <button className="btn btn-primary btn-lg">Create Folder</button>
         </div>
         <div className="px-5">
